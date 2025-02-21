@@ -1,15 +1,84 @@
 <html>
   <head>
     <title>Cedak Mesjid</title>
+    <link rel="icon" href="assets/images/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-  #main {
-    width: 320px;
+  @font-face {
+    font-family: 'PTSerif';
+    src: url('assets/fonts/PT_Serif/PTSerif-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PTSerif';
+    src: url('assets/fonts/PT_Serif/PTSerif-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PTSerif';
+    src: url('assets/fonts/PT_Serif/PTSerif-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'PTSerif';
+    src: url('assets/fonts/PT_Serif/PTSerif-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+  }
+  html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'PTSerif';
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .center {
+    text-align: center;
+  }
+  #logo {
+    height: 28pt;
+    position: relative;
+    top: 4pt;
+  }
+  #main, #map {
+    width: 50%;
+  }
+  @media screen and (max-width: 720px) {
+    #main, #map {
+      width: 100%;
+    }
   }
 </style>
+
   </head>
   <body>
-    <h1>Cedak Mesjid</h1>
-    <img id="main" src="assets/images/real.PNG"/>
+    <br/>
+    <h1>
+      &nbsp;&nbsp;&nbsp;
+      Cedak Mesjid
+      <img src="assets/images/logo.svg" id="logo"/>
+    </h1>
+    <br/>
+    <div class="flex-container">
+      <img id="main" src="assets/images/real.PNG"/>
+      <img id="map" src="assets/images/map-bare.PNG"/>
+    </div>
+    <footer class="center">
+      <br/>
+      &copy;
+      <a href="https://aivoxovia.onrender.com" target="_blank">
+        AivoxoviA
+      </a>
+      &middot;
+      2025
+      <br/>
+      <br/>
+    </footer>
   </body>
 </html>
