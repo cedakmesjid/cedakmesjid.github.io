@@ -2,6 +2,7 @@
   <head>
     <title>Cedak Mesjid</title>
     <link rel="icon" href="assets/images/logo.svg" />
+    <meta name="theme-color" content="#106b29">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -33,6 +34,8 @@
     margin: 0px;
     padding: 0px;
     font-family: 'PTSerif';
+    background: #106b29;
+    color: white;
   }
   .flex-container {
     display: flex;
@@ -54,6 +57,57 @@
       width: 100%;
     }
   }
+
+  .links img {
+    width: 32px;
+  }
+
+  h1 {
+    position: relative;
+  }
+
+  .links {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+  }
+  .links a {
+    text-decoration: none;
+  }
+  @media screen and (min-width: 720px) {
+    .links {
+      right: 72px;
+    }
+    .links a {
+      padding-right: 32px;
+    }
+    .menu {
+      display: block !important;
+    }
+    .burger {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 719px) {
+    .links {
+      right: 32px;
+    }
+    .menu {
+      display: none;
+      position: relative;
+      top: 64px;
+      right: -16px;
+    }
+    .burger {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -20px;
+    }
+    .links a {
+      padding: 0px 16px;
+    }
+  }
 </style>
 
   </head>
@@ -63,7 +117,40 @@
       &nbsp;&nbsp;&nbsp;
       Cedak Mesjid
       <img src="assets/images/logo.svg" id="logo"/>
+      <div class="links">
+        <div id="menu" class="menu">
+          <a href="https://maps.app.goo.gl/PXAeqmWiYEzb5vyZ6" target="_blank">
+            <button>
+              <img id="maps" src="assets/images/icons/maps.svg"/>
+            </button>
+          </a>
+          <a href="https://wa.me/6282143620099" target="_blank">
+            <button>
+              <img src="assets/images/icons/whatsapp.svg"/>
+            </button>
+          </a>
+          <a href="https://instagram.com/cedakmesjid" target="_blank">
+            <button>
+              <img src="assets/images/icons/instagram.svg"/>
+            </button>
+          </a>
+          <a href="https://www.tiktok.com/@cedak.mesjid?_t=ZS-8u7zcI1N0nH&_r=1" target="_blank">
+            <button>
+              <img src="assets/images/icons/tiktok.svg"/>
+            </button>
+          </a>
+        </div>
+        <div class="burger">
+          <a id="burger" href="#">
+            <button>
+              <img src="assets/images/icons/burger.svg"/>
+            </button>
+          </a>
+        </div>
+      </div>
     </h1>
+    <br/>
+    <br/>
     <br/>
     <div class="flex-container">
       <img id="main" src="assets/images/real.PNG"/>
@@ -80,5 +167,6 @@
       <br/>
       <br/>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
