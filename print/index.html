@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A4 Paper</title>
+  <link rel="stylesheet" href="./A4.css">
+<style>
+@font-face {
+  font-family: 'PTSerif';
+  src: url('../../assets/fonts/PT_Serif/PTSerif-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSerif';
+  src: url('../../assets/fonts/PT_Serif/PTSerif-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSerif';
+  src: url('../../assets/fonts/PT_Serif/PTSerif-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'PTSerif';
+  src: url('../../assets/fonts/PT_Serif/PTSerif-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'MarckScript';
+  src: url('../../assets/fonts/Marck_Script/MarckScript-Regular.ttf');
+}
+
+/* ---------------------- */
+
+.template {
+  display: none;
+}
+.page {
+  padding-top: 0;
+}
+
+.page::after {
+  outline: none;
+}
+
+/*
+#main div {
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+*/
+
+/* test spacing */
+#main {
+  margin: 0 auto;
+  /*
+  padding-top: 0.2cm;
+  */
+  width: 154mm;
+}
+
+#main > .item {
+  display: flex;
+}
+
+#main > div > div {
+  display: inline-block;
+}
+
+/* test spacing */
+#main > .item > .item {
+  position: relative;
+  height: 38.00078mm;
+}
+#main > .item > .item {
+  width: 76mm;
+}
+#main > .item > .space {
+  width: 2mm;
+  height: 38mm;
+}
+
+#main > .item > .item blockquote {
+  margin: 0;
+  font-size: 10pt;
+  height: 100%;
+}
+
+#main > .item > .item blockquote .logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 33%;
+  font-size: 9pt;
+  text-align: center;
+}
+#main > .item > .item blockquote .logo img{
+  height: 33mm; 
+}
+#main > .item > .item blockquote .logo span a{
+  position: relative;
+  bottom: 8px;
+  text-decoration: none;
+}
+
+#main > .item > .item blockquote > div {
+  width: 66%;
+  height: 100%;
+}
+
+#main > .item > .item blockquote > div table {
+  height: 100%;
+}
+
+#main > .item > .item blockquote > div .quote {
+  font-family: "MarckScript";
+}
+
+#main > .item > .item blockquote > div cite > a {
+  font-family: "PTSerif";
+  font-style: normal;
+  font-size: 9pt;
+}
+
+.quote::before {
+  content: open-quote;
+}
+
+.quote::after {
+  content: close-quote;
+}
+
+/* test spacing */
+#main > .space {
+  height: 8mm;
+}
+</style>
+</head>
+
+<body style="--bleeding: 0.5cm;--margin: 1cm;">
+  <div class="template">
+    <blockquote>
+      <div>
+        <table>
+          <tr>
+            <td style="vertical-align: middle">
+              <div class="quote"></div>
+              <hr/>
+              <cite>
+                <a></a>
+              </cite>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="logo">
+        <img src="../../assets/images/logo-qr.png"/>
+        <span>
+          <a href="https://bit.ly/cdkmsjd">bit.ly/cdkmsjd</a>
+        </span>
+      </div>
+    </blockquote>
+
+  </div>
+  <div class="page">
+    <div id="main">
+      <div class="item">
+        <div class="item"></div>
+        <div class="space"></div>
+        <div class="item"></div>
+      </div>
+      <div class="space">
+        <div class="item"></div>
+        <div class="space"></div>
+        <div class="item"></div>
+      </div>
+      <div class="item">
+        <div class="item"></div>
+        <div class="space"></div>
+        <div class="item"></div>
+      </div>
+      <div class="space">
+        <div class="item"></div>
+        <div class="space"></div>
+        <div class="item"></div>
+      </div>
+      <div class="item">
+        <div class="item"></div>
+        <div class="space"></div>
+        <div class="item"></div>
+      </div>
+      <div class="space">
+        <div class="item"></div>
+        <div class="space"></div>
+        <div class="item"></div>
+      </div>
+      <div class="item">
+        <div class="item"></div>
+        <div class="space"></div>
+        <div class="item"></div>
+      </div>
+      <div class="space">
+        <div class="item"></div>
+        <div class="space"></div>
+        <div class="item"></div>
+      </div>
+      <div class="item">
+        <div class="item"></div>
+        <div class="space"></div>
+        <div class="item"></div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
