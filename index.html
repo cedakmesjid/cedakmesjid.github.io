@@ -37,6 +37,9 @@
     background: #106b29;
     color: white;
   }
+  a {
+    color: #999;
+  }
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -74,12 +77,23 @@
   .links a {
     text-decoration: none;
   }
+
+  .center {
+    text-align: center;
+  }
+
+  #qr {
+    width: 256px;
+    display: none;
+    padding-top: 64px;
+  }
+
   @media screen and (min-width: 720px) {
     .links {
-      right: 72px;
+      right: 2px;
     }
     .links a {
-      padding-right: 32px;
+      padding-right: 16px;
     }
     .menu {
       display: block !important;
@@ -105,7 +119,10 @@
       right: -20px;
     }
     .links a {
-      padding: 0px 16px;
+      padding: 0px 8px;
+    }
+    #qr {
+      padding-top: 96px;
     }
   }
 </style>
@@ -119,6 +136,13 @@
       <img src="assets/images/logo.svg" id="logo"/>
       <div class="links">
         <div id="menu" class="menu">
+          <a href="#">
+            <button id="qrToggle">
+              <img
+                src="assets/images/icons/qr-code.svg"
+              />
+            </button>
+          </a>
           <a href="https://maps.app.goo.gl/PXAeqmWiYEzb5vyZ6" target="_blank">
             <button>
               <img id="maps" src="assets/images/icons/maps.svg"/>
@@ -149,6 +173,11 @@
         </div>
       </div>
     </h1>
+
+    <div class="center">
+      <img id="qr" src="/assets/images/qr-code.png"/>
+    </div>
+
     <br/>
     <br/>
     <br/>
